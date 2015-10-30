@@ -22,3 +22,9 @@ docker stop <id>
 echo $?
 0
 ```
+
+###### versions
+There are two files to support different versions of the image, so we can test
+that updates work by comparing image hashes.
+- docker tag `0.0.1` has file `one` added, resulting in image hash `c63fef070f16`
+- docker tag `0.0.2` has file `two` added, resulting in image hash `5cb7db17eece`
